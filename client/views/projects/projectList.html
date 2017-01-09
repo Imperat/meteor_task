@@ -1,0 +1,27 @@
+<template name="projectList">
+  <h2> List of projects </h2>
+  {{> filteringPanel}}
+  <div class="table-wrapper">
+    <table class="table table-hover">
+      <tr>
+      <th><a href="#" class="js-sorted-column" data-field="number"> №</a> </th>
+      <th><a href="#" class="js-sorted-column" data-field="name"> Name</a></th>
+      <th><a href="#" class="js-sorted-column" data-field="client">Client</a></th>
+      <th><a href="#" class="js-sorted-column" data-field="cost">Cost</a></th>
+      <th><a href="#" class="js-sorted-column" data-field="submitted"> Date</a></th>
+      <th><a href="#" class="js-sorted-column" data-field="ownerEMail">Manager</a></th>
+      <th> Actions </th>
+     </tr>
+      {{#each projects}}
+        {{> projectItem}}
+      {{/each}}
+    </table>
+  </div>
+  {{#if nextPath}}
+    <a class="load-more" href="{{nextPath}}">Load more</a>
+  {{else}}
+    {{#unless ready}}
+      {{> spinner}}
+    {{/unless}}
+  {{/if}}
+</template>

@@ -1,0 +1,19 @@
+<template name="filteringPanel">
+  <div class="filter-panel">
+    Choose the field to filter projects:
+    <select class="form-control btn-mini filter-field">
+      <option value="name">name</option>
+      <option value="client">customer</option>
+      <option value="ownerEMail">manager</option>
+    </select>
+    <div class="input-group input-group-sm">
+      <input type="text" class="form-control filter-for" placeholder="Filter for...">
+      <span class="input-group-btn">
+        <button class="btn btn-default js-filter" type="button">Go!</button>
+      </span>
+      <span class="input-group-btn">
+        <button class="btn btn-default js-clear-filter" type="button">Clear</button>
+      </span>
+    </div>
+  </div>
+</template>

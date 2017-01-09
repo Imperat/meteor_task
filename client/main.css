@@ -1,0 +1,54 @@
+body {
+  background: #eee;
+  color: #666666;
+}
+
+.access-denied {
+  position: absolute;
+  left: 45%;
+  top: 45%;
+}
+
+.load-more {
+   display: block;
+   border-radius: 3px;
+   background: rgba(0, 0, 0, 0.05);
+   text-align: center;
+   height: 60px;
+   line-height: 60px;
+   margin-bottom: 10px;
+ }
+.load-more:hover {
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.form-wrapper {
+  padding: 20px;
+  width: 50%;
+}
+
+.table-wrapper {
+  padding: 20px;
+}
+
+.filter-panel{
+  padding: 20px;
+  width: 300px;
+}
+
+select.btn-mini {
+    height: auto;
+    line-height: 14px;
+}
+
+select.btn {
+    -webkit-appearance: button;
+       -moz-appearance: button;
+            appearance: button;
+    padding-right: 16px;
+}
+
+tr {
+  line-height: 48px;
+}

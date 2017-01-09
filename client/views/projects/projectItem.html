@@ -1,0 +1,15 @@
+<template name="projectItem">
+  <tr>
+    <td> {{number}} </td>
+    <td>{{name}} </td>
+    <td> {{client}} </td>
+    <td> {{cost}} </td>
+    <td>{{submitted.toLocaleDateString}} {{submitted.toLocaleTimeString}} </td>
+    <td> {{ownerEMail}} </td>
+    {{# if isEditable }}
+      <td> <a href="{{pathFor 'projectEdit'}}" class="discuss btn btn-default">Edit</a> </td>
+    {{ else }}
+      <td> </td>
+    {{/if}}
+  </tr>
+</template>
